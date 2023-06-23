@@ -53,12 +53,12 @@ Next We need to dockerize the Django Project
                 depends_on:
                 - db
         
-        db:
-            image: postgres
-            environment:
-            - POSTGRES_USER=admin                   # your pgadmin owner
-            - POSTGRES_PASSWORD=lintcloud           # your pgadmin password
-            - POSTGRES_DB=jarvis_1                  # your pgadmin database
+            db:
+                image: postgres
+                environment:
+                - POSTGRES_USER=admin                   # your pgadmin owner
+                - POSTGRES_PASSWORD=lintcloud           # your pgadmin password
+                - POSTGRES_DB=jarvis_1                  # your pgadmin database
 
 
     5. In Terminal Type " pip freeze > requirements.txt "
